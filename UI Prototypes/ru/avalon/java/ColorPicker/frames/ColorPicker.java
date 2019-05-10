@@ -1,4 +1,4 @@
-package ru.avalon.java.frames;
+package ru.avalon.java.ColorPicker.frames;
 
 import java.awt.*;
 import javax.swing.*;
