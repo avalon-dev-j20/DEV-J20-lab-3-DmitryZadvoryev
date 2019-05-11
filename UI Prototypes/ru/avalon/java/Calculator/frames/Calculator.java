@@ -166,15 +166,16 @@ private void onEquallyClick(ActionEvent e){
  @Override
 protected void onCreate() {
 
-    setTitle("Calculator");       
-    setLayout(new GridLayout(6, 1, 5, 5));           
+    setTitle("Calculator"); 
+    setLayout(new GridLayout(6, 1, 5, 5));
+    Dimension minimumSize = new Dimension(350, 500);
+    setMinimumSize(minimumSize);
     add(createResultPanel());
     add(createNumLine(button7, button8, button9, addition));
     add(createNumLine(button4, button5, button6, subtract));
     add(createNumLine(button1, button2, button3, multiplication));
     add(createNumLine(CE, button0, point, divide));
     add(createEquallyPanel());
-    pack();
     
     button1.addActionListener(this::onButton1Click);
     button2.addActionListener(this::onButton2Click);
